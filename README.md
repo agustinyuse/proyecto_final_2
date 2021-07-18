@@ -15,11 +15,11 @@ La configuración se encuenta en la raíz principal del proyecto dentro de la ca
 
 ### API
 
-#### GET https://charm-slender-scaffold.glitch.me/productos/listar
+#### GET https://quirky-pine-battery.glitch.me/productos/listar
 
-#### GET https://charm-slender-scaffold.glitch.me/productos/listar/:id
+#### GET https://quirky-pine-battery.glitch.me/productos/listar/:id
 
-#### POST https://charm-slender-scaffold.glitch.me/productos/guardar
+#### POST https://quirky-pine-battery.glitch.me/productos/guardar
 
 El id del producto es autonúmerico.
 timestamp now por defecto.
@@ -44,7 +44,7 @@ json
 }
 ```
 
-#### PUT https://charm-slender-scaffold.glitch.me/productos/actualizar/:id
+#### PUT https://quirky-pine-battery.glitch.me/productos/actualizar/:id
 
 headers:
 
@@ -66,7 +66,7 @@ json
 }
 ```
 
-#### DELETE https://charm-slender-scaffold.glitch.me/productos/borrar/:id
+#### DELETE https://quirky-pine-battery.glitch.me/productos/borrar/:id
 
 headers:
 
@@ -74,11 +74,11 @@ headers:
 administrador: true
 ```
 
-#### GET https://charm-slender-scaffold.glitch.me/carrito/listar
+#### GET https://quirky-pine-battery.glitch.me/carrito/listar
 
-#### GET https://charm-slender-scaffold.glitch.me/carrito/listar/:id
+#### GET https://quirky-pine-battery.glitch.me/carrito/listar/:id
 
-#### POST https://charm-slender-scaffold.glitch.me/carrito/guardar
+#### POST https://quirky-pine-battery.glitch.me/carrito/guardar
 
 timestamp_producto y timestamp_carrito (timestamp now) se generan por defecto
 
@@ -101,7 +101,7 @@ json
 }
 ```
 
-#### DELETE https://charm-slender-scaffold.glitch.me/carrito/borrar/id
+#### DELETE https://quirky-pine-battery.glitch.me/carrito/borrar/id
 
 ### Para correr el proyecto
 
