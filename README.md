@@ -11,7 +11,9 @@ La 2da parte del proyecto final consta de entregar la misma funcionalidad del 1e
 Para conectarse a una base de datos, hay que especificar mediante un número que consta de 0 a 3. Donde 0= memoria, 1=mongodb, 2=mongodb atlas y 3=MySQL.
 Por defecto, en caso de no encontrar la base de datos, va a instanciarse en memoría.
 
-La configuración se encuenta en la raíz principal del proyecto dentro de la carpeta "config".
+La configuración se encuenta en la raíz principal del proyecto dentro de la carpeta "config", donde se van a encontrar los diferentes parametros, como el puerto y las conexiones a las bases de datos de mongo.
+
+DB = 0 a 3 (Bases de datos).
 
 ### API
 
