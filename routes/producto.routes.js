@@ -20,7 +20,7 @@ router.use(function (req, res, next) {
 
 router.get("/listar", async (req, res) => {
   try {
-    const objs = await controller.findAll();
+    const objs = await controller.findAll(req.query);
 
     res.status(200).json(objs);
   } catch (error) {

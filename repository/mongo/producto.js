@@ -27,9 +27,37 @@ class Producto {
     }
   };
 
-  findAll = async () => {
+  findAll = async (params) => {
     try {
-      return await model.find({});
+      let conditions = {};
+
+      if (params.nombre) {
+        conditions["nombre"] = params.nombre;
+      }
+
+      if (params.codigo) {
+        conditions["codigo"] = params.codigo;
+      }
+
+      if (params.startPrecio && params.endPrecio) {
+        let range = {};
+
+        range["$gt"] = params.startPrecio;
+        range["$lt"] = params.endPrecio;
+
+        conditions["precio"] = range;
+      }
+
+      if (params.startStock && params.endStock) {
+        let range = {};
+
+        range["$gt"] = params.startStock;
+        range["$lt"] = params.endStock;
+
+        conditions["stock"] = range;
+      }
+
+      return await model.find(conditions);
     } catch (err) {
       console.error(err.message);
     }

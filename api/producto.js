@@ -17,8 +17,8 @@ class ProductoController {
     this.repository.delete(id);
   };
 
-  findAll = () => {
-    return this.repository.findAll();
+  findAll = (params) => {
+    return this.repository.findAll(params);
   };
 
   findById = (id) => {

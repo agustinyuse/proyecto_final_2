@@ -19,6 +19,12 @@ DB = 0 a 3 (Bases de datos).
 
 #### GET https://quirky-pine-battery.glitch.me/productos/listar
 
+Para filtrar por nombre, código, y rango de precios y stock en query params.
+
+nombre, codigo, startPrecio, endPrecio, startStock, endStock
+
+Momentaneamente los filtros solo están disponibles para mongo.
+
 #### GET https://quirky-pine-battery.glitch.me/productos/listar/:id
 
 #### POST https://quirky-pine-battery.glitch.me/productos/guardar
