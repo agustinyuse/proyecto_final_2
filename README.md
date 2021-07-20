@@ -17,7 +17,7 @@ DB = 0 a 3 (Bases de datos).
 
 ### API
 
-#### GET https://quirky-pine-battery.glitch.me/productos/listar
+#### GET localhost:3000/productos/listar
 
 Para filtrar por nombre, código, y rango de precios y stock en query params.
 
@@ -25,9 +25,9 @@ nombre, codigo, startPrecio, endPrecio, startStock, endStock
 
 Momentaneamente los filtros solo están disponibles para mongo.
 
-#### GET https://quirky-pine-battery.glitch.me/productos/listar/:id
+#### GET localhost:3000/productos/listar/:id
 
-#### POST https://quirky-pine-battery.glitch.me/productos/guardar
+#### POST localhost:3000/productos/guardar
 
 El id del producto es autonúmerico.
 timestamp now por defecto.
@@ -52,7 +52,7 @@ json
 }
 ```
 
-#### PUT https://quirky-pine-battery.glitch.me/productos/actualizar/:id
+#### PUT localhost:3000/productos/actualizar/:id
 
 headers:
 
@@ -74,7 +74,7 @@ json
 }
 ```
 
-#### DELETE https://quirky-pine-battery.glitch.me/productos/borrar/:id
+#### DELETE localhost:3000/productos/borrar/:id
 
 headers:
 
@@ -82,11 +82,11 @@ headers:
 administrador: true
 ```
 
-#### GET https://quirky-pine-battery.glitch.me/carrito/listar
+#### GET localhost:3000/carrito/listar
 
-#### GET https://quirky-pine-battery.glitch.me/carrito/listar/:id
+#### GET localhost:3000/carrito/listar/:id
 
-#### POST https://quirky-pine-battery.glitch.me/carrito/guardar
+#### POST localhost:3000/carrito/guardar
 
 timestamp_producto y timestamp_carrito (timestamp now) se generan por defecto
 
@@ -109,7 +109,7 @@ json
 }
 ```
 
-#### DELETE https://quirky-pine-battery.glitch.me/carrito/borrar/id
+#### DELETE localhost:3000/carrito/borrar/id
 
 ### Para correr el proyecto
 
