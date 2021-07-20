@@ -23,8 +23,6 @@ Para filtrar por nombre, código, y rango de precios y stock en query params.
 
 nombre, codigo, startPrecio, endPrecio, startStock, endStock
 
-Momentaneamente los filtros solo están disponibles para mongo.
-
 #### GET https://quintessential-large-thursday.glitch.me/productos/listar/:id
 
 #### POST https://quintessential-large-thursday.glitch.me/productos/guardar

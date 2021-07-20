@@ -91,11 +91,40 @@ class Producto {
     });
   };
 
-  findAll = () => {
+  findAll = (params) => {
     return new Promise((resolve) => {
       knex
         .from("productos")
         .select("*")
+        .where((builder) => {
+          if (params.nombre) {
+            builder.where("nombre", params.nombre);
+          }
+
+          if (params.codigo) {
+            builder.where("codigo", params.codigo);
+          }
+
+          if (params.startPrecio && params.endPrecio) {
+            builder.where(
+              knex.raw(
+                `precio BETWEEN ${Number(params.startPrecio)} AND ${Number(
+                  params.endPrecio
+                )}`
+              )
+            );
+          }
+
+          if (params.startStock && params.endStock) {
+            builder.where(
+              knex.raw(
+                `stock BETWEEN ${Number(params.startStock)} AND ${Number(
+                  params.endStock
+                )}`
+              )
+            );
+          }
+        })
         .then((rows) => {
           const products = Object.values(JSON.parse(JSON.stringify(rows)));
           resolve(products);
