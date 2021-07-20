@@ -17,7 +17,7 @@ DB = 0 a 3 (Bases de datos).
 
 ### API
 
-#### GET localhost:3000/productos/listar
+#### GET https://quintessential-large-thursday.glitch.me/productos/listar
 
 Para filtrar por nombre, código, y rango de precios y stock en query params.
 
@@ -25,9 +25,9 @@ nombre, codigo, startPrecio, endPrecio, startStock, endStock
 
 Momentaneamente los filtros solo están disponibles para mongo.
 
-#### GET localhost:3000/productos/listar/:id
+#### GET https://quintessential-large-thursday.glitch.me/productos/listar/:id
 
-#### POST localhost:3000/productos/guardar
+#### POST https://quintessential-large-thursday.glitch.me/productos/guardar
 
 El id del producto es autonúmerico.
 timestamp now por defecto.
@@ -52,7 +52,7 @@ json
 }
 ```
 
-#### PUT localhost:3000/productos/actualizar/:id
+#### PUT https://quintessential-large-thursday.glitch.me/productos/actualizar/:id
 
 headers:
 
@@ -74,7 +74,7 @@ json
 }
 ```
 
-#### DELETE localhost:3000/productos/borrar/:id
+#### DELETE https://quintessential-large-thursday.glitch.me/productos/borrar/:id
 
 headers:
 
@@ -82,11 +82,11 @@ headers:
 administrador: true
 ```
 
-#### GET localhost:3000/carrito/listar
+#### GET https://quintessential-large-thursday.glitch.me/carrito/listar
 
-#### GET localhost:3000/carrito/listar/:id
+#### GET https://quintessential-large-thursday.glitch.me/carrito/listar/:id
 
-#### POST localhost:3000/carrito/guardar
+#### POST https://quintessential-large-thursday.glitch.me/carrito/guardar
 
 timestamp_producto y timestamp_carrito (timestamp now) se generan por defecto
 
@@ -109,7 +109,7 @@ json
 }
 ```
 
-#### DELETE localhost:3000/carrito/borrar/id
+#### DELETE https://quintessential-large-thursday.glitch.me/carrito/borrar/id
 
 ### Para correr el proyecto
 
