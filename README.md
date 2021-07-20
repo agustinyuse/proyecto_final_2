@@ -17,15 +17,15 @@ DB = 0 a 3 (Bases de datos).
 
 ### API
 
-#### GET https://quintessential-large-thursday.glitch.me/productos/listar
+#### GET https://incredible-learned-vessel.glitch.me/productos/listar
 
 Para filtrar por nombre, código, y rango de precios y stock en query params.
 
 nombre, codigo, startPrecio, endPrecio, startStock, endStock
 
-#### GET https://quintessential-large-thursday.glitch.me/productos/listar/:id
+#### GET https://incredible-learned-vessel.glitch.me/productos/listar/:id
 
-#### POST https://quintessential-large-thursday.glitch.me/productos/guardar
+#### POST https://incredible-learned-vessel.glitch.me/productos/guardar
 
 El id del producto es autonúmerico.
 timestamp now por defecto.
@@ -50,7 +50,7 @@ json
 }
 ```
 
-#### PUT https://quintessential-large-thursday.glitch.me/productos/actualizar/:id
+#### PUT https://incredible-learned-vessel.glitch.me/productos/actualizar/:id
 
 headers:
 
@@ -72,7 +72,7 @@ json
 }
 ```
 
-#### DELETE https://quintessential-large-thursday.glitch.me/productos/borrar/:id
+#### DELETE https://incredible-learned-vessel.glitch.me/productos/borrar/:id
 
 headers:
 
@@ -80,11 +80,11 @@ headers:
 administrador: true
 ```
 
-#### GET https://quintessential-large-thursday.glitch.me/carrito/listar
+#### GET https://incredible-learned-vessel.glitch.me/carrito/listar
 
-#### GET https://quintessential-large-thursday.glitch.me/carrito/listar/:id
+#### GET https://incredible-learned-vessel.glitch.me/carrito/listar/:id
 
-#### POST https://quintessential-large-thursday.glitch.me/carrito/guardar
+#### POST https://incredible-learned-vessel.glitch.me/carrito/guardar
 
 timestamp_producto y timestamp_carrito (timestamp now) se generan por defecto
 
@@ -107,7 +107,7 @@ json
 }
 ```
 
-#### DELETE https://quintessential-large-thursday.glitch.me/carrito/borrar/id
+#### DELETE https://incredible-learned-vessel.glitch.me/carrito/borrar/id
 
 ### Para correr el proyecto
 
