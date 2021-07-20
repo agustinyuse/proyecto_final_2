@@ -105,7 +105,12 @@ class Producto {
             builder.where("codigo", params.codigo);
           }
 
-          if (params.startPrecio && params.endPrecio) {
+          if (
+            params.startPrecio &&
+            params.endPrecio &&
+            !isNaN(params.startPrecio) &&
+            !isNaN(params.endPrecio)
+          ) {
             builder.where(
               knex.raw(
                 `precio BETWEEN ${Number(params.startPrecio)} AND ${Number(
@@ -115,7 +120,12 @@ class Producto {
             );
           }
 
-          if (params.startStock && params.endStock) {
+          if (
+            params.startStock &&
+            params.endStock &&
+            !isNaN(params.startStock) &&
+            !isNaN(params.endStock)
+          ) {
             builder.where(
               knex.raw(
                 `stock BETWEEN ${Number(params.startStock)} AND ${Number(
