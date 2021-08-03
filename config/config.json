@@ -1,6 +1,6 @@
 {
   "PORT": 3000,
   "DB": 0,
-  "MONGO_URL": "mongodb://localhost:27017/final2",
-  "MONGO_ATLAS": "mongodb+srv://user:password@cluster0.8q2po.mongodb.net/final2"
+  "MONGO_URL": "",
+  "MONGO_ATLAS": ""
 }
